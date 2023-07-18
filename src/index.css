@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Montserrat:wght@700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .flex-between {
+    @apply flex items-center justify-between;
+  }
+  .overlay-styles {
+    @apply p-5 absolute flex h-[380px] w-[450px] flex-col items-center justify-center whitespace-normal bg-primary-500 text-center text-white opacity-0 transition duration-500 hover:opacity-90;
+  }
+  .input-styles {
+    @apply mb-5 w-full rounded-lg bg-primary-300 px-5 py-3 placeholder-white;
+  }
+}
+
+html,
+body,
+#root,
+.app {
+  height: 100%;
+  width: 100%;
+  font-family: "DM Sans", sans-serif;
+  @apply text-gray-500;
+}
